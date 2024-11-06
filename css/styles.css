@@ -1,21 +1,127 @@
-/* Ini CSS */
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Trebuchet MS", Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
 main {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: flex-start;
+    column-gap: 40px;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
 }
 
-.bisquebg {
-    background-color: bisque;
-    padding: 20px 20px 20px 20px;
-    border-radius: 5px;
+.sectionForm, .sectionResult {
+    max-width: 500px;
+    min-width: 300px;
+    width: 100%;
+    background-color: #f5f5dc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sectionForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sectionForm h1, .sectionResult h1 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.formBMI {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #ffe4c4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.gender-form label {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.input-group label {
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+}
+
+.input-group input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+button[type="button"] {
+    background-color: #4CAF50;
+    margin-top: 10px;
+}
+
+button[type="reset"] {
+    background-color: #f44336;
+}
+
+.sectionResult {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.resultBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffe4c4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-align: center;
+}
+
+.resultBox h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
 }
 
 span {
-    font-size: 30px;
-    font-weight: 900;
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
 }
 
 footer {
     text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    color: #666;
 }
