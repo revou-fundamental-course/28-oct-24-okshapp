@@ -99,11 +99,14 @@ button[type="reset"] {
 }
 
 .consult-btn {
-    background-color: #007BFF;
+    background-color: #4CAF50;
+    width: 50%;
+
 }
 
 .register-btn {
-    background-color: #ff9800;
+    background-color: #4CAF50;
+    width: 50%;
 }
 
 /* Flexbox styling for Result Section */
@@ -154,4 +157,16 @@ body {
 
 main {
     flex-grow: 1;
+}
+
+.btn-two {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+}
+
+.consult-btn, .register-btn {
+    flex: 1;
+    text-align: center;
 }

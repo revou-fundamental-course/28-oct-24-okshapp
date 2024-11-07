@@ -1,3 +1,3 @@
 // Ini Javascript
 
-var 
+console.log('Helloworld!');
