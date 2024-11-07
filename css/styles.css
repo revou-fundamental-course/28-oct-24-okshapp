@@ -1,8 +1,12 @@
+/* Typography */
+
 body, h1, h2, h3, h4, h5, h6 {
     font-family: "Trebuchet MS", Tahoma, sans-serif;
     margin: 0;
     padding: 0;
 }
+
+/* Main styling for Form Section */
 
 main {
     display: flex;
@@ -83,7 +87,7 @@ button {
     width: 100%;
 }
 
-/* Specific button styles */
+/* Specific button styling */
 button[type="button"] {
     background-color: #4CAF50;
     margin-top: 10px;
@@ -109,7 +113,7 @@ button[type="reset"] {
     width: 50%;
 }
 
-/* Flexbox styling for Result Section */
+/* Flexbox styling untuk Result Section */
 .section-result {
     display: flex;
     flex-direction: column;
@@ -140,7 +144,7 @@ span {
     color: #333;
 }
 
-/* Footer Positioning */
+/* Posisi Footer */
 footer {
     text-align: center;
     padding: 20px;
@@ -159,6 +163,8 @@ main {
     flex-grow: 1;
 }
 
+/* Posisi dua button terakhir */
+
 .btn-two {
     display: flex;
     gap: 10px;
@@ -169,4 +175,81 @@ main {
 .consult-btn, .register-btn {
     flex: 1;
     text-align: center;
+}
+
+/* Image resize */
+
+.finduson {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+.img p {
+    margin: 5px 0;
+    font-weight:lo bold;
+}
+
+.img a img {
+    width: 180px;
+    margin: 5px;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.img a img:hover {
+    transform: scale(1.05);
+}
+
+/* Media Query untuk Smaller Screen */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .section-form, .section-result {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    body, h1, h2, h3, h4, h5, h6 {
+        font-size: 16px;
+    }
+
+    .section-form h1, .section-result h1 {
+        font-size: 1.5em;
+    }
+
+    .img a img {
+        width: 140px;
+    }
+}
+
+/* Media Query untuk Even Smaller Screens (phone)*/
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .section-form h1, .section-result h1 {
+        font-size: 1.4em;
+    }
+
+    .section-form, .section-result {
+        text-align: center;
+        padding: 15px;
+    }
+
+    .finduson, .img {
+        text-align: center;
+    }
 }
